@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: cursive; */
+    font-family: 'Caveat', cursive, 'Aref Ruqaa', serif;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* START NAV */
+
+header {
+    display: flex;
+    height: 50PX;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    text-align: center;
+}
+
+.logo {
+    font-size: 35px;
+    padding: 0 15px;
+    font-weight: 900;
+    text-shadow: 0px 0px 10px #ff0000;
+    color: white;
+    box-shadow: inset 0 0 50px 0px black;
+}
+
+header>h1 {
+    padding: 0 10px;
+    color: #2c00f5;
+    flex-grow: 1;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+nav>ul>li {
+    height: 100%;
+    padding: 15px;
+    border-top: 5px solid #ffffff87;
+    padding-top: 10px;
+    flex-grow: 1;
+}
+
+nav>ul>li:hover {
+    background-color: #00daff4d;
+    box-shadow: inset 0 0 15px 0 white;
+    cursor: pointer;
+}
+
+
+/* END NAV */
+
+section:first-of-type {
+    background-image: url("https://wallpaperaccess.com/full/124383.jpg");
+    height: 650px;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(2)>.sec-con {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.card {
+    height: 320px;
+    width: 250px;
+    margin: 5px;
+    background-color: whitesmoke;
+    border-radius: 6px 6px 5px 5px;
+    -webkit-border-radius: 6px 6px 5px 5px;
+    -moz-border-radius: 6px 6px 5px 5px;
+    -ms-border-radius: 6px 6px 5px 5px;
+    -o-border-radius: 6px 6px 5px 5px;
+}
+
+
+/* START CONTAINER */
+
+div.bot-container {
+    border: 1px solid #00a8ff;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    width: 315px;
+    height: 350px;
+    margin-top: 50px;
+    background-color: #3a2d5380;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 30;
+}
+
+@media only screen and (max-width: 750px) {
+    div.bot-container {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+
+/* END CONTAINER */
+
+
+/* START HEAD */
+
+.head {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #0052ffc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ffd7;
+    box-shadow: 0px 110px 120px -11px #03d5d5, -8px 20px 40px -9px black;
+    z-index: 30;
+}
+
+.head:hover {
+    cursor: default;
+}
+
+
+/* END HEAD */
+
+
+/* START CHAT */
+
+.chat {
+    grid-area: 2 / 1 / 3 / 2;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.message {
+    background-color: beige;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    max-width: 274px;
+    display: inline-block;
+    border-bottom-left-radius: 0px;
+    direction: rtl;
+}
+
+.bot-message-container {
+    direction: rtl;
+}
+
+.bot-message {
+    background-color: beige;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 274px;
+    display: inline-block;
+    border-top-right-radius: 0px;
+}
+
+.question {
+    background-color: #006374;
+    padding: 7px;
+    margin: 10px;
+    margin-right: -5px;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 274px;
+    display: inline-block;
+    color: white;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+
+/* END CHAT */
+
+
+/* START INPUT FIELD */
+
+.field {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    /* background-color: #3a2d53; */
+}
+
+.field>input {
+    flex-grow: 1;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: #63d1f48c;
+    padding: 10px;
+    outline: none;
+}
+
+.field>button {
+    padding: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 25px;
+    background-color: #00aff5;
+}
+
+.field>button:hover {
+    cursor: pointer;
+}
+
+
+/* END INPUT FIELD */
+
+
+/* START EDIT PANEL */
+
+#edit {
+    background-color: #48ff00;
+}
+
+
+/* END EDIT PANEL */
+
+
+/* START LINKS */
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: #1700ff;
+    text-shadow: 0 0 1px #00c5ff;
+}
+
+
+/* END LINKS */
